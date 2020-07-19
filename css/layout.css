@@ -1,0 +1,10 @@
+main {
+  margin: 0 auto;
+  width: 480px;
+}
+
+@media all and (min-width: 980px) {
+  main {
+    width: 960px;
+  }
+}

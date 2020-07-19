@@ -49,14 +49,6 @@ table {
 
 /* ----------------------  End of reset ---------------------- */
 
-main {
-  width: 480px;
-  background-color: aliceblue;
-}
-
-@media all and (min-width: 767px) {
-  main {
-    width: 960px;
-    background-color: aqua;
-  }
+* {
+  box-sizing: border-box;
 }
