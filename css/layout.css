@@ -1,20 +1,28 @@
 main {
-  display: grid;
-  background-color: rgb(185, 157, 157);
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-template-rows: 1fr 75px 150px 125px 125px 250px 250px 80px 1fr;
+  
+  background-color: rgb(131, 112, 112);
 
-  grid-row-start: 5;
-  grid-row-end: 9;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  display: grid;
+  grid-template-columns:  240px 240px;
+	grid-template-rows: 75px 150px 125px 125px 250px 250px 80px;
+}
+
+@media all and (min-width: 768px) and (max-width: 959px) {
+  body > main {
+    background-color: rgb(170, 148, 148);
+  }
 }
 
 @media all and (min-width: 960px) {
-  main {
+  body > main {
+    background-color: rgb(224, 203, 203);
 
-    grid-column-start: 2;
-    grid-column-end: 7;
-    grid-row-start: 2;
-    grid-row-end: 6;
+    grid-template-columns:  200px repeat(4, 190px);
+    grid-template-rows: 100px 200px 250px 150px;  
   }
 }
